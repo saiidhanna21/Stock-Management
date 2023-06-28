@@ -1,7 +1,7 @@
 <?php 
 include('../../utils/connect.php');
 include('../../views/partials/flash.php');
-include("../functions.php");
+include("../../controllers/stock/checkExpired.php");
 checkExpiredItems($con);
 session_start();
 if (isset($_SESSION['flash'])) {

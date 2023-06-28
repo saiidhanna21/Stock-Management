@@ -1,6 +1,7 @@
 <?php
 include('../layouts/boilerplate.php');
-include('../../controllers/users/RetreiveOrderDetails.php');
+include('../../controllers/history/receiveOrders.php');
+include('../../controllers/history/pendingOrders.php');
 
 if (isset($_SESSION['flash'])) {
     echo $_SESSION['flash'];
@@ -55,7 +56,7 @@ if (!empty($arr[0])) {
                 <td>' . $arr[$i]['supplier_id'] . '</td>
                 <td>' . $arr[$i]['order_date'] . '</td>
                 <td>' . $arr[$i]['order_status'] . '</td>
-                <td><a class="btn btn-info" href="../stock/PendingOrderDetails.php?order_id=' . $arr[$i]['order_id'] . '">View Details</a></td>       
+                <td><a class="btn btn-info" href="PendingOrderDetails.php?order_id=' . $arr[$i]['order_id'] . '">View Details</a></td>       
                 <td>
                     <button type="button" class="btn btn-danger cancel-btn" data-toggle="modal" data-target="#exampleModal" data-orderid="' . $arr[$i]['order_id'] . '">
                         Cancel

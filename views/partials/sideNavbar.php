@@ -34,7 +34,7 @@
 				</a>
 				<ul class="dropdown-menu">
 					<li class="navItem">
-						<a href="../users/ReceivePendingOrders.php">
+						<a href="../history/ReceivePendingOrders.php">
 							<span class="icon-holder">
 								<i class="fas fa-truck-loading"></i>
 							</span>
@@ -42,7 +42,7 @@
 						</a>
 					</li>
 					<li class="navItem">
-						<a href="../users/ReturnOrders.php">
+						<a href="../history/ReturnOrders.php">
 							<span class="icon-holder">
 								<i class="fas fa-truck fa-flip-horizontal"></i>
 							</span>
@@ -50,7 +50,7 @@
 						</a>
 					</li>
 					<li class="navItem">
-						<a href="../stock/ReturnedOrders.php">
+						<a href="../history/ReturnedOrders.php">
 							<span class="icon-holder">
 								<i class="fas fa-shipping-fast fa-flip-horizontal"></i>
 							</span>
@@ -58,7 +58,7 @@
 						</a>
 					</li>
 					<li class="navItem">
-						<a href="../stock/CancelledOrders.php">
+						<a href="../history/CancelledOrders.php">
 							<span class="icon-holder">
 								<i class="fas fa-trash fa-flip-horizontal"></i>
 							</span>

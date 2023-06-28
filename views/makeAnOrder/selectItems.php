@@ -19,7 +19,6 @@ if(isset($_SESSION['items'])){
         }else{
             $_SESSION['supplier_id'] = $_POST['supplier_id'];
             $new = true;
-
         }
     }
 }
@@ -45,12 +44,8 @@ elseif(empty($_POST['supplier_id'])){
         $new = true;
         $_SESSION['supplier_id'] = $_POST['supplier_id'];
     }
-    
-    
-    
-    
 
-include('../functions.php');
+include('../../controllers/orders/supplier.php');
 ?>
 <h1>Make An Order</h1>
 <h4>Select Items</h4>

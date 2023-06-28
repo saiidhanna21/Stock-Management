@@ -1,6 +1,7 @@
 <?php
 include('../layouts/boilerplate.php');
-include('../../controllers/users/RetreiveOrderDetails.php');
+include('../../controllers/history/returnOrders.php');
+include('../../controllers/history/receiveOrders.php');
 $orders=array();
 if(isset($_POST["orders"])){
     $orders=$_POST["orders"];
@@ -32,7 +33,7 @@ if(!empty($arr[0])){
                 <td>'.$arr[$i]['supplier_id'].'</td>
                 <td>'.$arr[$i]['order_date'].'</td>
                 <td>'.$arr[$i]['order_status'].'</td>
-                <td><a class="btn btn-info" href="../stock/ReturnedOrdersDetails.php?order_id=' .$arr[$i]['order_id']. '">View Details</a></td>';
+                <td><a class="btn btn-info" href="ReturnedOrdersDetails.php?order_id=' .$arr[$i]['order_id']. '">View Details</a></td>';
         }
         echo '</tbody>
     </table>

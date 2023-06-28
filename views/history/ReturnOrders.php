@@ -1,6 +1,6 @@
 <?php
 include('../layouts/boilerplate.php');
-include('../../controllers/users/RetreiveOrderDetails.php');
+include('../../controllers/history/receiveOrders.php');
 $arr=[];
 $arr=json_decode(getReceivedOrders($con),true);
 
@@ -27,7 +27,7 @@ echo '
                 <td>'.$arr[$i]['supplier_id'].'</td>
                 <td>'.$arr[$i]['order_date'].'</td>
                 <td>'.$arr[$i]['order_status'].'</td>
-                <td><a class="btn btn-info" href="../stock/OrderReturnDetails.php?order_id=' .$arr[$i]['order_id']. '">View Details</a>
+                <td><a class="btn btn-info" href="OrderReturnDetails.php?order_id=' .$arr[$i]['order_id']. '">View Details</a>
                 </td>
             </tr>
             ';

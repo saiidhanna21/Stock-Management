@@ -20,11 +20,8 @@ function makeAnOrder($con ,$supplierId , $itemsNb , $itemsQty){
         //save item ordered
         $itemNumber = $itemsNb[$i];
 
-
         //save quantity ordered
         $orderedQuantity = $itemsQty[$i];
-
-
 
         // get the item's needed details (uoms and pricing )
         $query = "SELECT uom_purchasing , uom_pricing , uom_selling , pricing_amount 
@@ -91,9 +88,6 @@ function makeAnOrder($con ,$supplierId , $itemsNb , $itemsQty){
         
             
         }
-
-        print_r($expiryDates)  ;
-        print_r($restQuantities);
 
         
         // update supplier items , do calculations for order data and insert in orderdata table
@@ -221,15 +215,4 @@ function getPrimaryQuantity($con , $unitQuantity , $uomPurchasing , $uomSelling 
         }
         return $value;
     }
-
-
-    
-
-
-
-
-
-
-
-
 ?>

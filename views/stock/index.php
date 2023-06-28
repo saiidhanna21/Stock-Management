@@ -6,7 +6,7 @@ if(!empty($_SESSION["makeOrder"])){
     echo(flash('Your Order Is Ordered succefully',false));
     unset($_SESSION["makeOrder"]);
 }
-include('../functions.php');
+include('../../controllers/stock/checkStock.php');
 $jsonData = checkStock($con);
 $data = json_decode($jsonData, true);
 echo '<div class="page-header no-gutters">

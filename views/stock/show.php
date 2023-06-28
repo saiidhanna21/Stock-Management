@@ -1,6 +1,9 @@
 <?php
-include('../functions.php');
 include('../../utils/connect.php');
+include('../../controllers/stock/checkStock.php');
+include('../../controllers/stock/getStock.php');
+include('../../controllers/stock/editThreshold.php');
+include('../../controllers/stock/analysis.php');
 
 if (!empty($_GET['itemNumber'])) {
     $itemNumber = $_GET['itemNumber'];

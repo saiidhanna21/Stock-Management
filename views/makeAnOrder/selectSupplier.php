@@ -9,7 +9,7 @@ if (empty($_SESSION["loggedIn"])) {
 }
 include('../layouts/boilerplate2.php');
 include_once('../../utils/connect.php');
-include('../functions.php');
+include('../../controllers/orders/supplier.php');
 
 // hone lezem a3mel shi flash lemen byerja3 men selectItems bala ma ykun mna22a supplier
 
