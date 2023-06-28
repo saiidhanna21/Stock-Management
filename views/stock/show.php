@@ -196,12 +196,12 @@ if (isset($_SESSION['flash'])) {
                 };
                 echo '],
                         series: [[';
-                foreach ($json as $month=>$key) {
-                    echo $json[$month] . ',';
+                foreach ($json1 as $month=>$key) {
+                    echo $json1[$month] . ',';
                 };
                 echo '],[';
-                foreach($json1 as $month=>$key){
-                    echo $json1[$month].',';
+                foreach($json as $month=>$key){
+                    echo $json[$month].',';
                 }
                 echo']]
                     }, {

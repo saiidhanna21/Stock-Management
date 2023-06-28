@@ -104,7 +104,7 @@
 							<span class="icon-holder">
 								<i class="fas fa-cog"></i>
 							</span>
-							<span class="title ml-2">Edit Treshold</span>
+							<span class="title ml-2">Edit Information</span>
 						</a>
 					</li>
 				</ul>
